@@ -1,6 +1,6 @@
 public class squareRootRecursion {
     public static void main(String...args){
-        int value = 90000;
+        int value = 100000;
         originalValue = value;
         squareRoot(value);
     }
