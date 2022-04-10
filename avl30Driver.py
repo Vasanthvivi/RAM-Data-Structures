@@ -1,0 +1,15 @@
+from avl import AVLTree
+root = None
+tree = AVLTree()
+root = tree.insert_node(root,4)
+root = tree.insert_node(root,2)
+root = tree.insert_node(root,6)
+root = tree.insert_node(root,1)
+root = tree.delete_node(root,2)
+# root = tree.insert(root, 8)
+# root = tree.insert(root, 4)
+# root = tree.insert(root, 10)
+# root = tree.insert(root, 2)
+# root = tree.insert(root, 5)
+# root = tree.insert(root, 1)
+print(root)
