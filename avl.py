@@ -50,7 +50,7 @@ class AVLTree(object):
     def delete_node(self, root, key):
 
         # Find the node to be deleted and remove it
-        if not root:
+        if root is None:
             return root
         elif key < root.key:
             root.left = self.delete_node(root.left, key)
@@ -66,7 +66,7 @@ class AVLTree(object):
                 root = None
                 return temp
             temp = self.getMinValueNode(root.right)
-            root.data = temp.data
+            root.key = temp.key
             root.right = self.delete_node(root.right,
                                           temp.key)
         if root is None:
