@@ -7,20 +7,17 @@ class Node:
         self.left = None
         self.height = 1
 
-
 class AVL(object):
 
     # build a node
     def buildNode(self, data):
         return Node(data)
 
-
     def getNodeHeight(self, node):
         if node is None:
             return 0
         else:
             return node.height
-
 
     def getBalanceFactor(self, node):
         if node is None:
@@ -33,7 +30,6 @@ class AVL(object):
         if node is None or node.left is None:
             return node
         return self.getSuccessor(node.left)
-
 
     def leftRotate(self, node):
         root = node.right
@@ -126,5 +122,4 @@ class AVL(object):
             print("no need rotation")
 
         return node
-
 
